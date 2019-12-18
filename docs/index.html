@@ -1,0 +1,193 @@
+<style>
+    table, th, td {
+      border: 1px solid black;
+    }
+</style>   
+   
+   <h1>New Semantic/Structural Elements</h1>
+   <article >
+        <h1>article</h1>
+        <p>The 'article' tag specifies independent, self-contained content.</p>
+        <p>An article should make sense on its own and it should be possible to distribute it independently from the rest of the site.</p>
+        
+    </article>
+<hr>
+
+    <p>My family and I visited The Epcot center this summer.</p>
+    <aside>
+    <h4>aside - Epcot Center</h4>
+    <p>The Epcot Center is a theme park in Disney World, Florida.</p>
+    </aside>
+<hr>
+
+    <b>BDI stands for Bi-Directional Isolation.</b> 
+    <p>
+        The ' bdi ' tag isolates a part of text that might be formatted in a different direction from other text outside it.
+        This element is useful when embedding user-generated content with an unknown directionality.</p>
+    <ul>
+        <li>User <bdi>Ari</bdi>: 60 points</li>
+        <li>User <bdi>Chaim</bdi>: 80 points</li>
+        <li>User <bdi>שלום אליכם</bdi>: 90 points</li>
+    </ul>
+
+<hr>
+    <b>Details & Summary</b>
+    <details>
+        <summary>i am Summary</summary>
+        <b>i am details</b><br>
+        The detail tag specifies additional details that the user can view or hide on demand.
+
+        The <b>details</b>  tag can be used to create an interactive widget that the user can open and  close. Any sort of content can be put inside the 'details' tag.
+        
+        The content of a  <b>details</b>  element should not be visible unless the open attribute is set.
+    </details>
+<hr>
+    <b>dialog window</b>
+    <table>
+        <tr>
+        <th>January <dialog open>This is an open dialog window</dialog></th>
+        <th>February</th>
+        </tr>
+        <tr>
+        <td>31</td>
+        <td>28</td>
+        </tr>
+    </table>
+<hr>
+    <b>figure</b>
+    <figure>    
+        <img src="data:image/jpeg;base64,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" alt="The Trulli Rock" width="300" height="220">
+        <figcaption><b>figcaption - </b> Fig.1 - Kosel, Yerushalayim, Eretz Yisroel.</figcaption>
+    </figure>
+
+<hr>
+    <footer>
+        <b>this is a footer</b>
+        <p>Posted by: AMK</p>
+        <p>Contact information: <a href="mailto:someone@example.com">
+        someone@example.com</a>.</p>
+    </footer>
+<hr>
+    <article>
+        <b>header</b>
+        <header>
+        <h1>Most important heading here</h1>
+        <h3>Less important heading here</h3>
+        <p>Note: A <b>header</b>  tag cannot be placed within a <b>footer</b>, <b>address</b> or another <b>header</b> element.</p>
+        </header>
+    </article>
+<hr>
+    <b>MAIN</b>
+    <main>
+        The <b>main</b> tag specifies the main content of a document. <br>
+        The content inside the <b>main</b> element should be unique to the document. It should not contain any content that is repeated across documents such as sidebars, navigation links, copyright information, site logos, and search forms.
+        <br>
+        Note: There must not be more than one <b>main</b> element in a document. The <b>main</b> element must NOT be a descendant of an <b>article</b>, <b>aside</b>, <b>footer</b>, <b>header</b>, or <b>nav</b> element.
+    </main>
+<hr>
+    <b>MARK</b>
+    <p>Do not forget to buy <mark>milk</mark> today.</p>
+<hr>
+    <b>meter</b><br>
+    here's 60% value='0.60' <meter value="0.60"></meter> 
+    <br>
+    The <b>meter</b> tag defines a scalar measurement within a known range, or a fractional value. This is also known as a gauge. <br>
+    Examples: Disk usage, the relevance of a query result, etc. <br>
+    Note: The <b>meter</b> tag should not be used to indicate progress (as in a progress bar). <br>
+<hr>
+    <b>progress</b><br>
+    For progress bars, use the progress - <b>progress</b> tag. <br>
+    like this: <br>
+        value=".25": <progress value=".25"></progress> <br>
+        value=".50": <progress value=".50"></progress> <br>
+        value="1" :  <progress value="1"></progress> <br>
+        no value: <progress></progress> <br>
+        <b>Tip: Use the <b>progress</b> tag in conjunction with JavaScript to display the progress of a task.</b>
+<hr>
+    <b>nav</b>
+    <nav>
+        <a href="/html/">HTML</a> |
+        <a href="/css/">CSS</a> |
+        <a href="/js/">JavaScript</a> |
+        <a href="/jquery/">jQuery</a>
+    </nav>
+    <p>The <b>nav</b> tag defines a set of navigation links.
+    Notice that NOT all links of a document should be inside a <b>nav</b> element. <br>
+    The <b>nav</b> element is intended only for major block of navigation links.</p>
+<hr>
+<b>section</b> <br>
+    <section>
+        <h1>i am a section</h1>
+        <p>defines sections in a document, such as chapters, headers, footers, or any other sections of the document.</p>
+    </section>
+<hr>
+    <b>time</b><br>
+    Attribute---	Value---	Description <br>
+    datetime---	datetime---	Represent a machine-readable date/time of the <b>time</b> element
+    <p>I have a meeting on <time datetime="2019-12-18 20:00">Thursday</time> .</p>
+<hr>
+    <b>wbr - (Word Break Opportunity) tag</b><br>
+    The <b>wbr</b> (Word Break Opportunity) tag specifies where in a text it would be ok to add a <line-break class="br"></line-break>
+    <b>Tip: </b>    When a word is too long, or you are afraid that the browser will break your lines at the wrong place, you can use the <b>wbr</b> <wbr> element to add word break opportunities.
+<hr>
+<hr>
+<hr>
+<h1>New Form Elements</h1>
+    <b>datalist</b><br>
+    <span>An 'input' element with pre-defined values in a 'datalist' :</span>
+    <input list="browsers">
+    <datalist id="browsers">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+    </datalist>
+<hr>
+
+    <b>output</b>
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        0 <input type="range" id="a" value="50"> 100
+        + <input type="number" id="b" value="50">
+        = <output name="x" for="a b"></output>
+    </form>
+<hr>
+<hr>
+<hr>
+<h1>New Input Types</h1>
+<ul>
+    <li>color</li>
+        <input type="color" name="color" id="">
+    <li>date</li>
+        <input type="date" name="" id="">
+    <li>datetime</li>
+        <input type="datetime" name="" id="">
+    <li>datetime-local</li>
+        <input type="datetime-local" name="" id="">
+    <li>email</li>
+        <input type="email" name="" id="">
+    <li>month</li>
+        <input type="month" name="" id="">
+    <li>number</li>
+        <input type="number" name="" id="">
+    <li>range</li>
+        <input type="range" name="" id="">
+    <li>search</li>
+        <input type="search" name="" id="">
+    <li>tel</li>
+        <input type="tel" name="" id="">
+    <li>time</li>
+        <input type="time" name="" id="">
+    <li>url</li>
+        <input type="url" name="" id="">
+    <li>week</li>
+        <input type="week" name="" id="">
+</ul>
+<hr>
+<hr>
+
+
+
+
+
+  
